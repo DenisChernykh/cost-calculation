@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# Cost Calculation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Калькулятор себестоимости блюд**
 
-Currently, two official plugins are available:
+## 📌 Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Это приложение помогает рассчитать себестоимость блюд. Позволяет создавать ингредиенты, указывать их стоимость, единицы измерения и объем, а затем составлять из них блюда с автоматическим расчетом себестоимости. Это приложение будет полезно кафе, поворам или любителям готовить.
 
-## Expanding the ESLint configuration
+## 🔗 Демо
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[👉 Перейти к приложению](https://denischernykh.github.io/cost-calculation/)
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Стек технологий
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React** + **Vite**
+- **TypeScript**
+- **Redux** (состояние)
+
+## 📂 Установка и запуск локально
+
+```sh
+git clone https://github.com/denischernykh/cost-calculation.git
+cd cost-calculation
+pnpm install
+pnpm dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎯 Функционал
+✅ Добавление ингредиентов с указанием цены, объема и единиц измерения
+✅ Создание блюд из ингредиентов
+✅ Автоматический расчет себестоимости блюда
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📷 Скриншоты
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Страница со списком ингредиентов](/1.png)
+![Страница со со списком блюд](/2.png)
+![Форма создания ингредиента](/3.png)
+
+## 📬 Контакты
+
+📩 **Связаться со мной:**
+
+🔹 **Telegram:** [@ChDenis](https://t.me/ChDenis)
+🔹 **Email:** [Chernykh.Denis.O@yandex.ru](mailto:Chernykh.Denis.O@yandex.ru)
