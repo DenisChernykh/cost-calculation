@@ -32,9 +32,9 @@ pnpm dev
 
 ## 📷 Скриншоты
 
-![Страница со списком ингредиентов](/1.png)
-![Страница со со списком блюд](/2.png)
-![Форма создания ингредиента](/3.png)
+![Страница со списком ингредиентов](https://raw.githubusercontent.com/DenisChernykh/cost-calculation/main/1.png)
+![Страница со списком ингредиентов](https://raw.githubusercontent.com/DenisChernykh/cost-calculation/main/2.png)
+![Страница со списком ингредиентов](https://raw.githubusercontent.com/DenisChernykh/cost-calculation/main/3.png)
 
 ## 📬 Контакты
 
