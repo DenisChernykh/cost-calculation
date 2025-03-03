@@ -60,7 +60,7 @@ export const getDishes = (state: RootState): Dish<Ingredient[]>[] => {
 	return state.dishes.dishes
 }
 export const getDishCost = createSelector(
-	[getIngredients, (state: RootState, dishId: string) => dishId, getDishes],
+	[getIngredients, (_: RootState, dishId: string) => dishId, getDishes],
 	(ingredients, dishId, dishes) => {
 		const dish = dishes.find((dish) => dish.id === dishId);
 		if (!dish) return 0;
